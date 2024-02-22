@@ -24,7 +24,7 @@ export const TypeOfService = ({  }) => {
 };
 
 let typesData = [
-  { type: "All", backgroundColor: "black" },
+  { type: "All", backgroundColor: "black",  },
   { type: "1:1 Call", backgroundColor: "#F7F7F7" },
   { type: "Priority DM", backgroundColor: "#F7F7F7" },
   { type: "Package", backgroundColor: "#F7F7F7" },

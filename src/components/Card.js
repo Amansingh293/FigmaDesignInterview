@@ -6,19 +6,19 @@ export const Card = ({ data }) => {
 
   return (
     <div className="w-[27rem] h-fit rounded-[32px] bg-[#FFFFFF] border border-black">
-      <div className="h-[186px] border-b-[1px] p-4">
-        <div className="h-[64px] flex justify-between">
-          <div className="w-[118px] h-[40px] rounded-lg bg-[#EBEAEB] flex justify-center items-center">
-            {header.icon} {header.headerTitle}
+      <div className="h-[11rem] border-b-[1px] p-4">
+        <div className="h-[4rem] flex justify-between">
+          <div className="w-[7rem] h-[2.5rem] rounded-lg bg-[#EBEAEB] flex justify-evenly items-center">
+            {header.icon}{header.headerTitle}
           </div>
           <BiRightArrowCircle className="w-[33px] h-[33px]"/>
         </div>
-        <div className="h-[56px] font-[700]">{body.heading}</div>
-        <div className="h-[20px] font-[400] font-size-[16px]">
+        <div className="h-[3.5rem] font-[700]">{body.heading}</div>
+        <div className="h-[1.25rem] font-[400] font-size-[16px]">
           {body.subHeading}
         </div>
       </div>
-      <div className="h-[77px] flex justify-between items-center p-4">
+      <div className="h-[4.8rem] flex justify-between items-center p-4">
         <div>{footer.info}</div>
         <div className="font-[700] bg-[#F7F7F7] rounded-[24px] p-2">
           {footer.price}
