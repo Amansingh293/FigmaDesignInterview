@@ -59,7 +59,7 @@ export const ServicesCard = ({ array }) => {
 
       {/* below code will show cards based on the selected or all services available*/}
 
-      <div className="grid grid-cols-auto md:grid-cols-2 2xl:grid-flow-col-3 gap-4">
+      <div className="grid grid-cols-auto md:grid-cols-2 2xl:grid-flow-col-3 gap-4 w-full">
         {filteredArray.map((obj, i) => {
           return <Card key={i} data={obj} index={i} />;
         })}

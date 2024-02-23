@@ -4,7 +4,7 @@ import { VerifiedIconSvg } from "./IconsSvg/VerifiedIconSvg";
 
 export const Aside = () => {
   return (
-    <div className="flex flex-col items-start gap-4 bg-[#1B363F] w-full lg:w-[40vw] text-white pb-4 lg:p-8">
+    <div className="flex flex-col items-start gap-4 bg-[#1B363F] w-full lg:w-[40vw] text-white pb-4 p-8">
       <div className=" h-[251px] rounded-[100%] object-cover flex justify-center items-center relative">
         <img
           className="rounded-[50%] w-max h-[187px]"

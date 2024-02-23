@@ -10,7 +10,7 @@ export const Home = ({ servicesArray, ratingData, commentData }) => {
       <Aside />
       <div className="h-fit w-full flex flex-col justify-center items-center p-4 pt-8">
         <ServicesCard array={servicesArray} />
-        <h1 className="pt-4 pb-4 font-[700] text-[31px] md:self-start ml-8">
+        <h1 className="pt-4 pb-4 font-[700] text-[31px] md:self-start">
           Services and FeedBack
         </h1>
         <RatingsFeedBack ratingData={ratingData} commentData={commentData} />
