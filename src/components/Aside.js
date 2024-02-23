@@ -4,17 +4,17 @@ import { VerifiedIconSvg } from "./IconsSvg/VerifiedIconSvg";
 
 export const Aside = () => {
   return (
-    <div className="flex flex-col items-start gap-4 bg-[#1B363F] w-full md:w-[40vw]  text-white p-8">
+    <div className="flex flex-col items-start gap-4 bg-[#1B363F] w-full lg:w-[40vw]  text-white pb-4 lg:p-8">
       <div className="w-[200px] h-[251px] rounded-[100%] object-cover flex justify-center items-center relative">
         <img
           className="rounded-[50%] w-max h-[187px]"
           alt="ProfileImage"
           src="https://s3-alpha-sig.figma.com/img/8d15/faec/215a80d280187e5c134b00394200bbd9?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e~2YT6ObbkvB32KfKRbCwS~~aknlzmR0tCjKn2FF6OAoYZgUhJj-ALRf2GOoahgqCf~ZKTcYgogFUOB6b736CSwlKiWEoAjV7n-85hA4P9gxvCvD3yN~8uSnmEhgotXy4CSK4c0mtcja-vcD-sTBoUt7HDJQ1B-Q7jNcDQRu0WOjzPm4w~FzJDuJBzEscDVSo0ZDiEKPUl0T8JBOWAGN4dqdLOmvFSmAGenDWKrvqWri3y4u5HHuvqazcD~l0v2FfIWaceGORAz-3r7tMgfvCgokR8~GMBIjIhh5PRCBz27zfYygq2aelM9syQWDqzCtGU8JZkaEEXfYsoQ9Cvu9Rg__"
         />
-        {/* <VerifiedIconSvg/> */}
+        <VerifiedIconSvg/>
       </div>
 
-      <div className="w-[532px] h-[196px]">
+      <div className="w-full h-[196px]">
         <h1 className="font-[700] text-[35px] pb-4">Ajinkya Ojha</h1>
         <p className="font-[400] text-[18px]">
           I help mid-career professionals become LIMITLESS in their business,

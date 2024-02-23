@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Card } from "./Card";
 
 export const ServicesCard = ({ array }) => {
@@ -8,9 +8,8 @@ export const ServicesCard = ({ array }) => {
     selectedService === "All" ? [...array] : []
   );
 
-  // Below code will handle filtering of services based on service selected by user 
+  // Below code will handle filtering of services based on service selected by user
   const handleFilterService = (e) => {
-
     const currentValue = e.target.textContent;
 
     setSelectedService(currentValue);
@@ -31,14 +30,14 @@ export const ServicesCard = ({ array }) => {
     <>
       {/*Below code's first part will generate dynamic buttons with services available */}
 
-      <div className="flex justify-start items-center gap-4 w-fit md:w-[911px] h-[78px]">
+      <div className="flex justify-start items-center gap-4 w-fit h-[78px]">
         {typesData.map((title, i) => {
           const { type } = title;
 
           return (
             <button
               key={i}
-              className="h-[54px] w-[68px] p-1 rounded-[12px]"
+              className="h-[54px] w-[68px] p-1 rounded-[12px] border"
               style={
                 type === selectedService
                   ? {
@@ -59,10 +58,10 @@ export const ServicesCard = ({ array }) => {
       </div>
 
       {/* below code will show cards based on the selected or all services available*/}
-      
+
       <div className="grid grid-cols-auto lg:grid-cols-2 gap-4 p-4">
         {filteredArray.map((obj, i) => {
-          return <Card key={i} data={obj} />;
+          return <Card key={i} data={obj} index={i} />;
         })}
       </div>
     </>

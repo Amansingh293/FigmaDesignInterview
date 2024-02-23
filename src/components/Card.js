@@ -1,8 +1,11 @@
 import React from "react";
 import { BiRightArrowCircle } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
-export const Card = ({ data }) => {
+export const Card = ({ data , index }) => {
   const { header, body, footer } = data;
+
+  const navigate = useNavigate();
 
   return (
     <div className="w-[27rem] h-fit rounded-[32px] bg-[#FFFFFF] border border-black">
@@ -11,7 +14,7 @@ export const Card = ({ data }) => {
           <div className="w-[7rem] h-[2.5rem] rounded-lg bg-[#EBEAEB] flex justify-evenly items-center">
             {header.icon}{header.headerTitle}
           </div>
-          <BiRightArrowCircle className="w-[33px] h-[33px]"/>
+          <BiRightArrowCircle className="w-[33px] h-[33px] cursor-pointer" onClick={()=>navigate(`/${index}`)}/>
         </div>
         <div className="h-[3.5rem] font-[700]">{body.heading}</div>
         <div className="h-[1.25rem] font-[400] font-size-[16px]">
