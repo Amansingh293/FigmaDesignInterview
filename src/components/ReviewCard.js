@@ -2,7 +2,7 @@ import React from "react";
 
 export const ReviewCard = ({ name , comment}) => {
   return (
-    <div className="flex flex-col h-[16rem] w-[27rem] border border-black rounded-[32px] p-4 bg-[#FDFBF9]">
+    <div className="flex flex-col h-[16rem] w-full border border-black rounded-[32px] p-4 bg-[#FDFBF9]">
       <div className="h-[10%] w-full mb-2">
         <svg
           width="35"

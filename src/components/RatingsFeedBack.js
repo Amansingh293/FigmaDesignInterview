@@ -16,24 +16,22 @@ const RatingsFeedBack = ({ ratingData, commentData }) => {
 
   let [showMore, setShowMore] = useState(false);
 
-  console.log(commentData, "=====", firstFourComments);
-
   return (
     <>
-      <div className="grid grid-cols-auto lg:grid-cols-2 w-fit md:w-[56rem] gap-4">
-        <div className="w-[27rem] h-[11rem] border border-black rounded-[32px] relative bg-[#FDFBF9]">
+      <div className="grid grid-cols-auto md:grid-cols-2 w-full lg:w-[60vw] gap-4">
+        <div className=" h-[11rem] border border-black rounded-[32px] relative bg-[#FDFBF9]">
           <BalloonsIcon
             className="absolute left-[50%]"
           />
         </div>
-        <div className="w-[27rem] h-[11rem] flex justify-between items-center">
-          <div className="w-[12rem] h-[11rem] border border-black rounded-[32px] flex flex-col justify-center items-center">
+        <div className=" h-[11rem] flex justify-between items-center gap-4">
+          <div className=" h-[11rem] w-1/2 border border-black rounded-[32px] flex flex-col justify-center items-center">
             <p className="text-[32px] font-[700]">
               {rating}/{maxRating}
             </p>
             <p>{totalRatings} Ratings</p>
           </div>
-          <div className="w-[12rem] h-[11rem] border border-black rounded-[32px] flex flex-col justify-center items-center">
+          <div className=" h-[11rem] w-1/2 border border-black rounded-[32px] flex flex-col justify-center items-center">
             <p className="text-[32px] font-[700]">{testimonials}</p>
             <p>Testimonials</p>
           </div>

@@ -8,6 +8,8 @@ import { MoreOfferings } from "../components/MoreOfferingsCard";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { servicesArray } from "../dummyData";
+import { DateItem } from "../components/DateItem";
+import { ConfirmDetail } from "../components/ConfirmDetail";
 
 const CheckOut = () => {
   const navigate = useNavigate();
@@ -31,8 +33,8 @@ const CheckOut = () => {
   }, []);
   return (
     <>
-      {currentService && (
-        <div className="w-full h-fit bg-[#F8F7F2] flex justify-center items-center p-8">
+     
+        <div className="w-full h-fit bg-[#F8F7F2] flex justify-center items-center p-8 gap-4">
           <div className=" w-[30rem] h-full flex flex-col justify-start items-start border border-black rounded-[40px] overflow-hidden bg-white">
             <div className="flex flex-col bg-[#ffd7d5] relative w-full gap-4">
               <div className="w-full h-[2rem]  flex flex-start items-center gap-4 p-8 ">
@@ -139,8 +141,9 @@ const CheckOut = () => {
               <MoreOfferings />
             </div>
           </div>
+          <ConfirmDetail/>
         </div>
-      )}
+ 
     </>
   );
 };

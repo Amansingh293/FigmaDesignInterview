@@ -27,10 +27,10 @@ export const ServicesCard = ({ array }) => {
   };
 
   return (
-    <>
+    <div className="lg:w-[60vw]">
       {/*Below code's first part will generate dynamic buttons with services available */}
 
-      <div className="flex justify-start items-center gap-4 w-fit h-[78px]">
+      <div className="flex justify-start items-center gap-4 w-full h-[78px]">
         {typesData.map((title, i) => {
           const { type } = title;
 
@@ -59,12 +59,12 @@ export const ServicesCard = ({ array }) => {
 
       {/* below code will show cards based on the selected or all services available*/}
 
-      <div className="grid grid-cols-auto lg:grid-cols-2 gap-4 p-4">
+      <div className="grid grid-cols-auto md:grid-cols-2 2xl:grid-flow-col-3 gap-4">
         {filteredArray.map((obj, i) => {
           return <Card key={i} data={obj} index={i} />;
         })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import { IoLinkOutline } from "react-icons/io5";
 
 export const AboutMe = () => {
   return (
-    <div className="w-full lg:w-[56rem] h-fit flex flex-col gap-6 font-oxygen p-8">
+    <div className="w-full h-fit flex flex-col gap-6 font-oxygen p-8">
       <h1 className="font-[700] text-[31px]">About Me</h1>
       <div className="flex justify-around items-center w-fit gap-4">
         <div className="h-[5rem] w-[5rem] border rounded-[16px] flex justify-center items-center text-[36px]">

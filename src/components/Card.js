@@ -8,7 +8,7 @@ export const Card = ({ data , index }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-[27rem] h-fit rounded-[32px] bg-[#FFFFFF] border border-black">
+    <div className="w-full h-fit rounded-[32px] bg-[#FFFFFF] border border-black">
       <div className="h-[11rem] border-b-[1px] p-4">
         <div className="h-[4rem] flex justify-between">
           <div className="w-[7rem] h-[2.5rem] rounded-lg bg-[#EBEAEB] flex justify-evenly items-center">
