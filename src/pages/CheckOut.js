@@ -21,7 +21,7 @@ const CheckOut = () => {
   const handleService = () => {
     try {
       let service = servicesArray[params.id].fullContent;
-      setCurrentService((prevService) => service);
+      setCurrentService(service);
       console.log(service.content1);
     } catch (err) {
       console.log(err.message);
@@ -105,12 +105,12 @@ const CheckOut = () => {
             <div className="h-auto md:h-[2rem] w-full flex justify-between items-center pb-4">
               <h1 className="font-[700] text-[1.5rem] ">Testimonials</h1>
               <div className="w-[20%] flex justify-around items-center">
-                <FaArrowLeft /> <FaArrowRight />
               </div>{" "}
             </div>
             <div className="flex flex-col h-auto md:flex-row justify-evenly items-center gap-2">
-              <TestimonialsCard />
-              <TestimonialsCard />
+            {currentService?.testimonials?.map((obj)=>{
+              return <TestimonialsCard data = {obj}/>
+            })}
             </div>
           </div>
 

@@ -11,6 +11,8 @@ import { IoDiamondOutline } from "react-icons/io5";
 export const ConfirmDetail = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const [activeTimeIndex , setActiveTimeIndex] = useState(0);
+
   const [offSet, setOffset] = useState(0);
 
   const dateGenerator = (offsetDay) => {
@@ -143,7 +145,7 @@ export const ConfirmDetail = () => {
       <div className="flex flex-col md:flex-row justify-start items-center gap-4 p-2 pl-8 pr-8 w-full">
         {timeList &&
           timeList.map((time, i) => {
-            return <TimeItem key={i} time={time} />;
+            return <TimeItem key={i} time={time} isActive={activeTimeIndex == i} setActiveTimeIndex={setActiveTimeIndex} index={i}/>;
           })}
       </div>
 

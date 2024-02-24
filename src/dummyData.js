@@ -60,7 +60,7 @@ export const servicesArray = [
     },
     fullContent: {
       profile: "Aman Singh",
-      header: "EAT™- Energy Healing Session",
+      header: "MASTERING MINDeMOTION WELLNESS PROGRAM",
       rating: 5,
       maxRating: 5,
       beforeDiscount: 10000,
@@ -128,7 +128,7 @@ export const servicesArray = [
       navigationIcon: "Arrow",
     },
     body: {
-      heading: "MASTERING MINDeMOTION WELLNESS PROGRAM",
+      heading: "1-1 Discovery Call",
       subHeading: "Bundle Package of 10 sessions",
     },
     footer: {
@@ -137,7 +137,7 @@ export const servicesArray = [
     },
     fullContent: {
       profile: "Aman Singh",
-      header: "Your Next Adventure Awaits",
+      header: "1-1 Discovery Call",
       rating: 4,
       maxRating: 5,
       beforeDiscount: 12000,
