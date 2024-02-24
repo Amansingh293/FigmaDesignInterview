@@ -3,16 +3,14 @@ import { BalloonsIcon } from "./IconsSvg/BalloonsIcon";
 import { ReviewCard } from "./ReviewCard";
 
 const RatingsFeedBack = ({ ratingData, commentData }) => {
-  console.log(commentData.length);
-// eslint-disable-next-line
+
   let [firstFourComments, setFirstFourComments] = useState(
     commentData.slice(0, 4)
   );
-// eslint-disable-next-line
+
   let [remainingComments, setRemainingComments] = useState(commentData);
 
   let { rating, totalRatings, testimonials, maxRating } = ratingData;
-  console.log(totalRatings);
 
   let [showMore, setShowMore] = useState(false);
 
@@ -21,7 +19,7 @@ const RatingsFeedBack = ({ ratingData, commentData }) => {
       <div className="grid grid-cols-auto md:grid-cols-2 w-full lg:w-[60vw] gap-4">
         <div className=" h-[11rem] border border-black rounded-[32px] relative bg-[#FDFBF9]">
           <BalloonsIcon
-            className="absolute left-[50%]"
+            
           />
         </div>
         <div className=" h-[11rem] flex justify-between items-center gap-4">

@@ -8,6 +8,7 @@ export const BalloonsIcon = () => {
       viewBox="0 0 181 159"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="absolute left-[30%]"
     >
       <path
         d="M162.346 125.273L163.953 124.943L164.836 123.561L165.646 124.987L167.233 125.4L166.127 126.612L166.226 128.249L164.731 127.571L163.205 128.17L163.388 126.54L162.346 125.273Z"

@@ -22,12 +22,10 @@ const CheckOut = () => {
     try {
       let service = servicesArray[params.id].fullContent;
       setCurrentService(service);
-      console.log(service.content1);
     } catch (err) {
       console.log(err.message);
     }
   };
-  console.log(currentService);
   useEffect(() => {
     handleService();
   }, []);
@@ -46,7 +44,7 @@ const CheckOut = () => {
             </div>
             <div className="w-[70%] h-[2rem] flex flex-start items-center gap-4 pl-4">
               <h1 className="font-[700] text-[1rem]">
-                {currentService.content1}
+                {currentService.header}
               </h1>
             </div>
             <div className="h-fit w-full p-4 flex justify-start items-center gap-4">
@@ -108,8 +106,8 @@ const CheckOut = () => {
               </div>{" "}
             </div>
             <div className="flex flex-col h-auto md:flex-row justify-evenly items-center gap-2">
-            {currentService?.testimonials?.map((obj)=>{
-              return <TestimonialsCard data = {obj}/>
+            {currentService?.testimonials?.map((obj , i)=>{
+              return <TestimonialsCard key={i} data = {obj}/>
             })}
             </div>
           </div>
@@ -128,8 +126,9 @@ const CheckOut = () => {
           </div>
 
           <div className="flex p-4 h-[15rem] bg-[#F7F7F7] w-full gap-4 flex-col md:flex-row">
-            <MoreOfferings />
-            <MoreOfferings />
+            {currentService?.offerings?.map((offering , i)=>{
+              return <MoreOfferings key={i} offering={offering}/>
+            })}
           </div>
         </div>
         <ConfirmDetail />

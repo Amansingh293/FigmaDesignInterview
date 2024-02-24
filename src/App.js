@@ -8,6 +8,7 @@ import { Home } from "./pages/Home";
 function App() {
   return (
     <Routes>
+      {/* Home page */}
       <Route
         path="/"
         element={
@@ -18,6 +19,7 @@ function App() {
           />
         }
       />
+      {/* checkout page */}
       <Route path="/:id" element={<CheckOut />} />
     </Routes>
   );

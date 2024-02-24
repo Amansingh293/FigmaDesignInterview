@@ -2,9 +2,11 @@ import React from "react";
 import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { IoLinkOutline } from "react-icons/io5";
 
+// this component is about me componenet
+
 export const AboutMe = () => {
   return (
-    <div className="w-full h-fit flex flex-col gap-6 font-oxygen p-8">
+    <div className="w-[94%] h-fit flex flex-col gap-6 font-oxygen p-8">
       <h1 className="font-[700] text-[31px]">About Me</h1>
       <div className="flex items-center flex-wrap w-fit gap-4">
         <div className="h-[5rem] w-[5rem] border rounded-[16px] flex justify-center items-center text-[36px]">

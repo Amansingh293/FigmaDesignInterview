@@ -1,7 +1,8 @@
 import React from "react";
 import SeeIconSvg from "./IconsSvg/SeeIconSvg";
-import { VerifiedIconSvg } from "./IconsSvg/VerifiedIconSvg";
 import myImage from './IconsSvg/ProfileImage.jpg';
+import { RiVerifiedBadgeLine } from "react-icons/ri";
+
 
 export const Aside = () => {
   return (
@@ -12,7 +13,7 @@ export const Aside = () => {
           alt="ProfileImage"
           src={myImage}
         />
-        
+        <RiVerifiedBadgeLine className="absolute right-2 bottom-3 text-[2rem]"/>
       </div>
 
       <div className="w-full">

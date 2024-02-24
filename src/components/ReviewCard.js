@@ -1,5 +1,7 @@
 import React from "react";
 
+// this component will is for reviews 
+
 export const ReviewCard = ({ name , comment}) => {
   return (
     <div className="flex flex-col h-[16rem] w-full border border-black rounded-[32px] p-4 bg-[#FDFBF9]">

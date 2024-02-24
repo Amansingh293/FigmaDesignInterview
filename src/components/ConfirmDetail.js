@@ -8,6 +8,8 @@ import {
 } from "react-icons/io5";
 import { IoDiamondOutline } from "react-icons/io5";
 
+// user confirmation     component
+
 export const ConfirmDetail = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -15,6 +17,12 @@ export const ConfirmDetail = () => {
 
   const [offSet, setOffset] = useState(0);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsOpen(true);
+    setTimeout(()=>setIsOpen(false) , 500);
+  };
   const dateGenerator = (offsetDay) => {
     // Function to get the name of the day
     function getDayName(dayIndex) {
@@ -177,9 +185,16 @@ export const ConfirmDetail = () => {
           <option value="Asia/Tokyo">(GMT+09:00) Tokyo</option>
         </select>
       </div>
-      <div className="h-[3rem] w-[90%] bg-black text-white flex justify-center items-center self-center rounded mt-4">
+      <div className="h-[3rem] w-[90%] bg-black text-white flex justify-center items-center self-center rounded mt-4 cursor-pointer" onClick={openPopup}>
         Confirm Details
       </div>
+      {isOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-8 rounded shadow-lg">
+            <p>Confirmed !</p>
+          </div>
+        </div>
+      )}
 
       <div className="min-h-[5rem] h-auto w-[90%] border flex justify-around items-center p-4 self-center mt-2 rounded">
         <p className="w-[60%]">

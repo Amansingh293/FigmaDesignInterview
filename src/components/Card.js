@@ -2,6 +2,8 @@ import React from "react";
 import { BiRightArrowCircle } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
+// This component is card for services available
+
 export const Card = ({ data , index }) => {
   const { header, body, footer } = data;
 

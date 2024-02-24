@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Card } from "./Card";
 
+// this will render all services available with types selection
+
 export const ServicesCard = ({ array }) => {
   let [selectedService, setSelectedService] = useState("All");
 

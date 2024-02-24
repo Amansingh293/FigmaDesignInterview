@@ -1,3 +1,4 @@
+// This file contains the dummy data
 
 export const typesData = [
   { type: "All" },
@@ -55,8 +56,8 @@ export const servicesArray = [
       subHeading: "Bundle Package of 10 sessions",
     },
     footer: {
-      info: "prod",
-      price: "Rs 2500",
+      info: "10 products",
+      price: "Rs 9500",
     },
     fullContent: {
       profile: "Aman Singh",
@@ -78,6 +79,7 @@ export const servicesArray = [
       bonus: "Spiritual Detox assistance (after the session for 7 days.)",
       content6:
         "Affirm your belief with the testimonies of the people who had experienced this magic :",
+      content7: "my signature modality",
       contentLink: "https://padlet.com/pallavisharmamishra/cbpi3bzrl4la4flm",
       seeYou: "See you in!",
       testimonials: [
@@ -93,9 +95,10 @@ export const servicesArray = [
         },
       ],
       sessions: 98,
-      offerings: {
-        content: "MASTERING MINDeMOTION WELLNESS PROGRAM",
-      },
+      offerings: [
+        { content: "MASTERING MINDeMOTION WELLNESS PROGRAM" },
+        { content: "MASTERING MINDeMOTION WELLNESS PROGRAM" },
+      ],
     },
   },
   {
@@ -129,11 +132,11 @@ export const servicesArray = [
     },
     body: {
       heading: "1-1 Discovery Call",
-      subHeading: "Bundle Package of 10 sessions",
+      subHeading: "25 minutes clarity session",
     },
     footer: {
-      info: "prod",
-      price: "Rs 2500",
+      info: "25 min meeting",
+      price: "Rs 4500",
     },
     fullContent: {
       profile: "Aman Singh",
@@ -143,6 +146,7 @@ export const servicesArray = [
       beforeDiscount: 12000,
       afterDiscount: 10000,
       meetingDuration: 90,
+      content7: "my signature modality",
       content1: "Welcome to your next adventure!",
       content2: "Embark on a journey of self-discovery and exploration.",
       content3:
@@ -166,7 +170,10 @@ export const servicesArray = [
         },
       ],
       sessions: 75,
-      offerings: { content: "EPIC EXPEDITIONS" },
+      offerings: [
+        { content: "EPIC EXPEDITIONS" },
+        { content: "EPIC EXPEDITIONS" },
+      ],
     },
   },
   {
@@ -206,21 +213,22 @@ export const servicesArray = [
       navigationIcon: "Arrow",
     },
     body: {
-      heading: "MASTERING MINDeMOTION WELLNESS PROGRAM",
+      heading: "Explore to Evolve Therapy Session",
       subHeading: "Bundle Package of 10 sessions",
     },
     footer: {
-      info: "prod",
+      info: "45 min meeting",
       price: "Rs 2500",
     },
     fullContent: {
       profile: "Aman Singh",
-      header: "Zen Meditation Retreat",
+      header: "Explore to Evolve Therapy Session",
       rating: 5,
       maxRating: 5,
       beforeDiscount: 8000,
       afterDiscount: 6000,
       meetingDuration: 120,
+      content7: "my signature modality",
       content1:
         "Find inner peace and tranquility at our Zen Meditation Retreat.",
       content2:
@@ -247,7 +255,10 @@ export const servicesArray = [
         },
       ],
       sessions: 50,
-      offerings: { content: "ZEN MEDITATION RETREAT" },
+      offerings: [
+        { content: "ZEN MEDITATION RETREAT" },
+        { content: "ZEN MEDITATION RETREAT" },
+      ],
     },
   },
   {
@@ -287,16 +298,16 @@ export const servicesArray = [
       navigationIcon: "Arrow",
     },
     body: {
-      heading: "MASTERING MINDeMOTION WELLNESS PROGRAM",
+      heading: "EAT™- Energy Healing Session",
       subHeading: "Bundle Package of 10 sessions",
     },
     footer: {
-      info: "prod",
-      price: "Rs 2500",
+      info: "60 min meeting",
+      price: "Rs 7500",
     },
     fullContent: {
       profile: "Aman Singh",
-      header: "Guided Meditation Workshop",
+      header: "EAT™- Energy Healing Session",
       rating: 4,
       maxRating: 5,
       beforeDiscount: 5000,
@@ -314,6 +325,7 @@ export const servicesArray = [
       bonus:
         "Exclusive access to our meditation resources and community for ongoing support.",
       content6: "Here's what some of our participants have to say:",
+      content7: "my signature modality",
       contentLink: "https://example.com/meditation-testimonials",
       seeYou: "See you at the workshop!",
       testimonials: [
@@ -329,9 +341,10 @@ export const servicesArray = [
         },
       ],
       sessions: 50,
-      offerings: {
-        content: "MEDITATION MASTERY WORKSHOP",
-      },
+      offerings: [
+        { content: "MEDITATION MASTERY WORKSHOP" },
+        { content: "MEDITATION MASTERY WORKSHOP" },
+      ],
     },
   },
 ];
