@@ -6,7 +6,7 @@ import { AboutMe } from "../components/AboutMe";
 
 export const Home = ({ servicesArray, ratingData, commentData }) => {
   return (
-    <div className="flex flex-col lg:flex-row w-[100vw] h-fit ">
+    <div className="flex flex-col lg:flex-row w-[100vw] lg:w-[98vw] h-fit ">
       <Aside />
       <div className="h-fit w-full flex flex-col justify-center items-center p-4 pt-8">
         <ServicesCard array={servicesArray} />

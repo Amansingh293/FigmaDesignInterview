@@ -59,6 +59,7 @@ export const servicesArray = [
       price: "Rs 2500",
     },
     fullContent: {
+      profile: "Aman Singh",
       header: "EAT™- Energy Healing Session",
       rating: 5,
       maxRating: 5,
@@ -135,6 +136,7 @@ export const servicesArray = [
       price: "Rs 2500",
     },
     fullContent: {
+      profile: "Aman Singh",
       header: "Your Next Adventure Awaits",
       rating: 4,
       maxRating: 5,
@@ -212,6 +214,7 @@ export const servicesArray = [
       price: "Rs 2500",
     },
     fullContent: {
+      profile: "Aman Singh",
       header: "Zen Meditation Retreat",
       rating: 5,
       maxRating: 5,
@@ -292,6 +295,7 @@ export const servicesArray = [
       price: "Rs 2500",
     },
     fullContent: {
+      profile: "Aman Singh",
       header: "Guided Meditation Workshop",
       rating: 4,
       maxRating: 5,
