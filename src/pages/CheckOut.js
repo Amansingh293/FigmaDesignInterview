@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { servicesArray } from "../dummyData";
 import { ConfirmDetail } from "../components/ConfirmDetail";
+import myImage from '../components/IconsSvg/ProfileImage.jpg';
 
 const CheckOut = () => {
   const navigate = useNavigate();
@@ -58,7 +59,7 @@ const CheckOut = () => {
             <img
               className="rounded-[50%] w-[4rem] h-[4rem] md:w-[6rem] md:h-[6rem] absolute right-2 md:right-4 top-12 md:top-11"
               alt="ProfileImage"
-              src="https://s3-alpha-sig.figma.com/img/8d15/faec/215a80d280187e5c134b00394200bbd9?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e~2YT6ObbkvB32KfKRbCwS~~aknlzmR0tCjKn2FF6OAoYZgUhJj-ALRf2GOoahgqCf~ZKTcYgogFUOB6b736CSwlKiWEoAjV7n-85hA4P9gxvCvD3yN~8uSnmEhgotXy4CSK4c0mtcja-vcD-sTBoUt7HDJQ1B-Q7jNcDQRu0WOjzPm4w~FzJDuJBzEscDVSo0ZDiEKPUl0T8JBOWAGN4dqdLOmvFSmAGenDWKrvqWri3y4u5HHuvqazcD~l0v2FfIWaceGORAz-3r7tMgfvCgokR8~GMBIjIhh5PRCBz27zfYygq2aelM9syQWDqzCtGU8JZkaEEXfYsoQ9Cvu9Rg__"
+              src={myImage}
             />
           </div>
           <div className="w-full h-fit border flex flex-col md:flex-row justify-center items-center">
